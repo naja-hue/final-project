@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar Button</title>
+</head>
+<body>
+  <h2>Contoh Button</h2>
+
+  <!-- Tombol untuk salam -->
+  <button onclick="sayHello()">Klik untuk Salam</button>
+
+  <!-- Tombol untuk ganti warna -->
+  <button onclick="changeColor()">Ganti Warna</button>
+
+  <!-- Area yang akan diubah -->
+  <div id="box" style="width:100px; height:100px; background-color:lightblue; margin-top:20px;"></div>
+
+  <script>
+    function sayHello() {
+      alert("Halo adik-adik! 👋");
+    }
+
+    function changeColor() {
+      let box = document.getElementById("box");
+      box.style.backgroundColor = "black";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #fbc2eb, #ffdde1); /* pink pastel */
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Sparkle effect */
+.sparkles {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.8), transparent),
+                    radial-gradient(2px 2px at 40% 70%, rgba(255,255,255,0.7), transparent),
+                    radial-gradient(2px 2px at 60% 20%, rgba(255,255,255,0.9), transparent),
+                    radial-gradient(2px 2px at 80% 50%, rgba(255,255,255,0.6), transparent);
+  background-repeat: repeat;
+  animation: sparkle 3s linear infinite;
+  z-index: 0;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.4; }
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(45deg, #ff80ab, #f48fb1);
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Heart Pulse */
+.heart {
+  display: inline-block;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.btn-logout {
+  background: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #ff80ab;
+  transition: 0.3s;
+}
+
+.btn-logout:hover {
+  background: #ffe4ec;
+}
+
+/* Content */
+.content {
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome {
+  color: #d81b60;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.desc {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(216, 27, 96, 0.25);
+  background: linear-gradient(to bottom right, #ffe4ec, #fff);
+}
+
+/* Animasi */
+.animate-slide {
+  animation: slideIn 0.8s ease-in-out;
+}
+
+.animate-pop {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: popIn 0.6s forwards;
+}
+
+.animate-pop.delay-1 { animation-delay: 0.3s; }
+.animate-pop.delay-2 { animation-delay: 0.6s; }
+.animate-pop.delay-3 { animation-delay: 0.9s; }
+.animate-pop.delay-4 { animation-delay: 1.2s; }
+
+.footer {
+  background: #ff4f81;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Sparkle Glitter Floating */
+.glitter {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255,255,255,0.9);
+  animation: glitterMove 6s linear infinite;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.glitter:nth-child(2) { top: 20%; left: 30%; animation-delay: 1s; }
+.glitter:nth-child(3) { top: 50%; left: 60%; animation-delay: 2s; }
+.glitter:nth-child(4) { top: 70%; left: 20%; animation-delay: 3s; }
+.glitter:nth-child(5) { top: 40%; left: 80%; animation-delay: 4s; }
+.glitter:nth-child(6) { top: 10%; left: 50%; animation-delay: 5s; }
+
+@keyframes glitterMove {
+  0% { transform: scale(1) translateY(0); opacity: 0.7; }
+  50% { transform: scale(1.6) translateY(-20px); opacity: 1; }
+  100% { transform: scale(1) translateY(0); opacity: 0.7; }
+}
+
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes popIn {
+  to { opacity: 1; transform: scale(1); }
+}

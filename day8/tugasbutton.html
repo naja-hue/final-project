@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tugas Button</title>
+</head>
+<body>
+  <h2>Tugas Button</h2>
+
+  <!-- Tiga tombol -->
+  <button onclick="sayHello()">Salam</button>
+  <button onclick="changeRandomColor()">Ganti Warna</button>
+  <button onclick="changeText()">Ganti Teks</button>
+
+  <!-- Kotak -->
+  <div id="box" style="width:150px; height:150px; background-color:lightblue; 
+  margin-top:20px; display:flex; align-items:center; justify-content:center;">
+    Beomgyu
+  </div>
+
+  <script>
+    function sayHello() {
+      alert("Halo, adik-adik! 👋");
+    }
+
+    function changeRandomColor() {
+      // Buat array warna
+      let colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "lightgreen"];
+      
+      // Pilih warna random
+      let randomColor = colors[Math.floor(Math.random() * colors.length)];
+      
+      // Ubah warna background kotak
+      let box = document.getElementById("box");
+      box.style.backgroundColor = randomColor;
+    }
+
+    function changeText() {
+      let box = document.getElementById("box");
+      box.textContent = "ailopyu!";
+    }
+  </script>
+</body>
+</html>

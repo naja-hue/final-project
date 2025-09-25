@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Nama</title>
+  <style>
+    body {
+      background-color: pink;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background: white;
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 6px;
+      margin: 6px 0 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <!-- Nama Depan -->
+      <label for="firstname">Nama Depan:</label><br>
+      <input type="text" id="firstname" name="firstname" placeholder="Masukkan nama depan"><br>
+
+      <!-- Nama Belakang -->
+      <label for="lastname">Nama Belakang:</label><br>
+      <input type="text" id="lastname" name="lastname" placeholder="Masukkan nama belakang"><br>
+
+      <!-- Tombol Submit (pindah ke tabel.html) -->
+      <a href="tabel.html">
+        <input type="button" value="Kirim">
+      </a>
+    </form>
+  </div>
+</body>
+</html>

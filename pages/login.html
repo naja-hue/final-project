@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Estetik</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- bunga jatuh -->
+  <div class="flower" style="left:10%; animation-duration: 5s;">🌸</div>
+  <div class="flower" style="left:25%; animation-duration: 7s;">🌷</div>
+  <div class="flower" style="left:50%; animation-duration: 6s;">🌺</div>
+  <div class="flower" style="left:75%; animation-duration: 8s;">🌸</div>
+  <div class="flower" style="left:90%; animation-duration: 5s;">🌼</div>
+
+  <div class="login-box animate-pop">
+    <h2>✨ Login ✨</h2>
+    <form onsubmit="return redirectToDashboard(event)">
+      <input type="text" placeholder="Username" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <button type="submit">Masuk</button>
+    </form>
+  </div>
+
+  <script>
+    function redirectToDashboard(event) {
+      event.preventDefault();
+      window.location.href = "dashboard.html"; 
+    }
+  </script>
+</body>
+</html>

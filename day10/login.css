@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffb6c1, #d291ff); /* pink → ungu */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.naja {
+  width: 320px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(210, 145, 255, 0.4);
+  text-align: center;
+  box-sizing: border-box; /* biar padding dihitung ke dalam */
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #d63384;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #a8338c;
+  font-weight: bold;
+  text-align: left;
+}
+
+input {
+  width: calc(100% - 10px); /* biar muat pas di dalam card */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f5a6c5;
+  border-radius: 8px;
+  background-color: #fff0f6;
+  transition: 0.3s;
+  box-sizing: border-box; /* hitung padding biar gak melebar */
+}
+
+input:focus {
+  outline: none;
+  border-color: #d291ff;
+  box-shadow: 0 0 8px rgba(210, 145, 255, 0.6);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff66b2, #a64dff); /* pink → ungu */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff3385, #7a1fff);
+  transform: scale(1.03);
+}

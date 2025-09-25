@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Rumah Adat</title>
+    <style>
+        body {
+            background-color: #f3e5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #4a148c;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            width: 200px;
+            text-align: center;
+            overflow: hidden;
+            background-color: #f8bbd0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #6a1b9a;
+        }
+
+        .card p {
+            font-size: 14px;
+            padding: 0 10px 15px;
+            color: #4a148c;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Rumah Adat Indonesia</h2>
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="../image/rumah_gadang.jpg" alt="Rumah Gadang">
+            <h3>Rumah Gadang</h3>
+            <p>Rumah adat Minangkabau dengan atap melengkung menyerupai tanduk kerbau.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="../image/joglo.jpg" alt="Joglo">
+            <h3>Joglo</h3>
+            <p>Rumah tradisional Jawa dengan atap tinggi berbentuk limasan.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="../image/honai.jpg" alt="Honai">
+            <h3>Honai</h3>
+            <p>Rumah bulat khas Papua terbuat dari kayu dan jerami.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="../image/tongkonan.jpg" alt="Tongkonan">
+            <h3>Tongkonan</h3>
+            <p>Rumah adat Toraja dengan atap melengkung menyerupai perahu.</p>
+        </div>
+    </div>
+</body>
+
+</html>
